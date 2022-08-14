@@ -2,7 +2,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import React, { useEffect, useState } from 'react'
 
-
 function BasicExample() {
 
  const [gitHubName, setGitHubName] = useState('')
@@ -21,16 +20,15 @@ function BasicExample() {
   })
  }, [])
 
-
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem'}}>
       <Card.Img variant="top" src={gitHubImg} />
       <Card.Body>
         <Card.Title>{gitHubName}</Card.Title>
         <Card.Text>
           {gitHubBio}
         </Card.Text>
-        <a href={gitHubLink}>
+        <a href={gitHubLink} target='Blank'>
          <Button variant="primary">My GitHub</Button>
         </a>
       </Card.Body>
